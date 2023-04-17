@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  var home = 'Home',
+      drive = 'Drive',
+      pitufos = 'Los pitufos';
+
+    misPeliculas(home,drive,pitufos)
+
+  function misPeliculas(show1,show2,show3) {
+      console.log(`
+    Mis Peliculas
+    ----------------------
+    1. ${show1}
+    1. ${show2}
+    1. ${show3}
+
+      `
+
+      )
+  }
+
+  var mispelis2 = ['home','LosPitufos','Flash'];
+ top3(mispelis2);
+
+    function top3(shows){
+      shows.sort()
+      console.log(`
+
+1.${shows[0]}
+2.${shows[1]}
+3.${shows[2]}
+    `)
+    }
+
+</script>
+
+</body>
+</html>
